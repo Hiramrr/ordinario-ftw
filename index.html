@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Back</title>
+    <meta name="description" content="Look Back, una pelicula de dos chicas que aman dibujar">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <a href="#contenido" class="saltarse">Saltar al contenido principal</a>
+    <header id="header" class="header">
+        <button aria-expanded="false" aria-controls="main-nav" id="menu"tabindex="0">
+            Menú
+        </button>
+        <nav id="main-nav" hidden>
+            <ul>
+                <li><a href="#" tabindex="0"> Inicio</a></li>
+                <li><a href="personajes.html" tabindex="0"> Personajes</a></li>
+                <li><a href="comentarios.html" tabindex="0"> Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido" role="main">
+        <div class="lookback" role="region" aria-label="Portada de Look Back">
+            <h1>Look Back</h1>
+        </div>
+        
+        <h1 id="informacion">¿De qué trata?</h1>
+        
+        <section class="presentacion" aria-labelledby="informacion" role="region">
+            <div class="columna img1" role="figure" aria-label="Imagen de Ayumu Fujino y Kyomoto"tabindex="0">
+                <img 
+                    src="Imagenes/Look Back Still 01.png" 
+                    alt="Escena de Look Back mostrando a las protagonistas"
+                    tabindex="-1">
+            </div>
+            
+            <article 
+                class="columna sinopsis" 
+                aria-labelledby="sinopsis-titulo"
+                tabindex="0">
+                <h2 id="sinopsis-titulo">Sinopsis</h2>
+                <div class="sinopsis-content">
+                    <p>
+                        La historia está protagonizada por dos chicas de Yamagata 
+                        que aspiran a convertirse en dibujantes. Ayumu Fujino 
+                        (藤野 歩 Fujino Ayumu) es una estudiante de primaria que 
+                        publica tiras cómicas de cuatro viñetas (yonkoma) en el 
+                        periódico escolar, mientras que Kyomoto (京本 Kyōmoto) es una 
+                        compañera que tiene agorafobia y no va a clase. Cuando ambas 
+                        comparten sección en el periódico, Fujino enfurece al descubrir 
+                        que Kyomoto dibuja mucho mejor que ella.
+                    </p>
+
+                    <p>
+                        Herida en su orgullo, 
+                        estudia por su propia cuenta los fundamentos del dibujo y se 
+                        obsesiona al punto de preocupar a su familia y amigos. 
+                        Pero a pesar de que llega a mejorar bastante, no es capaz 
+                        de alcanzar el nivel de Kyomoto y decide rendirse.
+                    </p>
+                </div>
+            </article>
+
+            <div 
+                class="columna img2" 
+                role="figure" 
+                aria-label="Póster oficial"
+                tabindex="0">
+                <img 
+                    src="Imagenes/Look Back Poster Oct 4 2024.jpg" 
+                    alt="Póster oficial de Look Back"
+                    tabindex="-1">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
