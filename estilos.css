@@ -103,6 +103,11 @@ h1 {
   display: block;
   border-radius: 4px;
 }
+.columna.sinopsis {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 500px;
+}
 
 button,
 a {
