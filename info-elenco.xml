@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elenco>
+    <miembro>
+        <nombre>Kiyotaka Oshiyama</nombre>
+        <papel>Director</papel>
+        <descripcion>Kiyotaka Oshiyama es un director de cine japonés que se ha ganado una reputación por sus películas de animación.</descripcion>
+    </miembro>
+    <miembro>
+        <nombre>Tatsuki Fujimoto</nombre>
+        <papel>Creador del manga</papel>
+        <descripcion>Tatsuki Fujimoto es un mangaka japonés conocido principalmente por ser el creador de las series Fire Punch, Chainsaw Man y Look Back.</descripcion>
+    </miembro>
+    <miembro>
+        <nombre>Yuumi Kawai</nombre>
+        <papel>Voz de Fujino</papel>
+        <descripcion>Ganó el premio a la Mejor Actriz en la 98.ª edición de los Premios Kinema Junpo Best Ten en 2024 por sus actuaciones en Desert of Namibia y A Girl Named Ann .</descripcion>
+    </miembro>
+    <miembro>
+        <nombre>Mizuki Yoshida</nombre>
+        <papel>Voz de Kyomoto</papel>
+        <descripcion>Mizuki Yoshida conocida por su papel en Alice in Borderland (2020), Atsui munasawagi (2022) y Mayhem Girls (2023).</descripcion>
+    </miembro>
+</elenco>

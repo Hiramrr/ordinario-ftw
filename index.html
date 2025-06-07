@@ -76,13 +76,13 @@
 
         <section role="region" aria-labelledby="trailer-titulo" aria-hidden="true" tabindex="-1">
             <h2 id="trailer-titulo">Trailer de la película</h2>
-            <div role="complementary" style="display: flex; gap: 2rem; align-items: start;">
-                <div style="flex: 1;">
+            <div role="complementary" class="divContenedor">
+                <div>
                     <iframe src="https://www.youtube.com/embed/ahXmiId65-s" title="Trailer de la película Look Back" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div style="flex: 3;">
-                    <p>Aqui estara una tabla jaja</p>
-                </div>
+                <aside>
+                    <table id="demo" role="table" aria-label="Información del elenco de la pelicula" tabindex="0"></table>
+                </aside>
             </div>
         </section>
 
@@ -94,7 +94,9 @@
             </div>
         </section>
     </main>
+    
 
+    <script src="cargarElenco.js"></script>  
     <script src="script.js"></script>
 </body>
 </html>
