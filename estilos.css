@@ -109,8 +109,7 @@ h1 {
   max-height: 500px;
 }
 
-button,
-a {
+button{
   color: white;
   background-color: #1e1e1e;
   border: 2px solid #4CAF50;
@@ -122,14 +121,7 @@ a {
 }
 
 button:hover,
-button:hover,
 button:focus {
-    background-color: #4CAF50;
-    color: #121212;
-}
-
-a:hover,
-a:focus {
     background-color: #4CAF50;
     color: #121212;
 }
@@ -169,6 +161,15 @@ iframe{
     letter-spacing: 1px;
 }
 
+a {
+    color: white;
+    background-color: #1e1e1e;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
 
 /*Esto es para el celular, esta raro jaja*/
 @media screen and (max-width: 768px) {
