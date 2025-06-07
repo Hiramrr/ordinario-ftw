@@ -79,7 +79,7 @@ h1 {
 .columna {
   flex: 1;
   border: 2px solid #e0e0e0;
-  padding: 1rem;
+  padding: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ a {
   color: white;
   background-color: #1e1e1e;
   border: 2px solid #4CAF50;
-  padding: 0.5rem 1rem;
+  padding: 8px 15px;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
@@ -132,4 +132,36 @@ a:hover,
 a:focus {
     background-color: #4CAF50;
     color: #121212;
+}
+
+/*Esto es para el celular, esta raro jaja*/
+@media screen and (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .columna {
+        min-height: 300px;
+        padding: 10px;
+    }
+
+    .columna.sinopsis {
+        order: -1;
+        min-height: auto;
+        max-height: none;
+    }
+
+    .lookback {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
