@@ -9,15 +9,16 @@
 </head>
 <body>
     <a href="#contenido" class="saltarse">Saltar al contenido principal</a>
-    <header id="header" class="header">
-        <button aria-expanded="false" aria-controls="main-nav" id="menu">
+    
+    <header id="header" class="header" role="banner">
+        <button aria-expanded="false" aria-controls="main-nav" id="menu"aria-label="Abrir menú de navegación">
             Menú
         </button>
-        <nav id="main-nav" hidden>
-            <ul>
-                <li><a> Inicio</a></li>
-                <li><a href="personajes.html"> Personajes</a></li>
-                <li><a href="comentarios.html"> Comentarios</a></li>
+        <nav id="main-nav" role="navigation" aria-label="Menú principal" hidden>
+            <ul role="menu">
+                <li><a role="menuitem" aria-current="page"> Inicio</a></li>
+                <li><a role="menuitem" href="personajes.html"> Personajes</a></li>
+                <li><a role="menuitem" href="comentarios.html"> Comentarios</a></li>
             </ul>
         </nav>
     </header>
@@ -27,55 +28,71 @@
             <h1>Look Back</h1>
         </div>
         
-        <h2 id="informacion">¿De qué trata?</h2>
-        
-        <section class="presentacion" aria-labelledby="informacion" role="region">
-            <div class="columna img1" role="figure" aria-label="Imagen de Ayumu Fujino y Kyomoto" tabindex="0">
-                <img src="Imagenes/Look Back Still 01.png" alt="Escena de Look Back mostrando a las protagonistas">
-            </div>
+        <section role="region" aria-labelledby="informacion">
+            <h2 id="informacion">¿De qué trata?</h2>
             
-            <article class="columna sinopsis" aria-labelledby="sinopsis-titulo"tabindex="0">
-                <h2 id="sinopsis-titulo">Sinopsis</h2>
-                <div class="sinopsis-contenido">
-                    <p>
-                        La historia está protagonizada por dos chicas de Yamagata 
-                        que aspiran a convertirse en dibujantes. Ayumu Fujino 
-                        (藤野 歩 Fujino Ayumu) es una estudiante de primaria que 
-                        publica tiras cómicas de cuatro viñetas (yonkoma) en el 
-                        periódico escolar, mientras que Kyomoto (京本 Kyōmoto) es una 
-                        compañera que tiene agorafobia y no va a clase. Cuando ambas 
-                        comparten sección en el periódico, Fujino enfurece al descubrir 
-                        que Kyomoto dibuja mucho mejor que ella.
-                    </p>
-
-                    <p>
-                        Herida en su orgullo, 
-                        estudia por su propia cuenta los fundamentos del dibujo y se 
-                        obsesiona al punto de preocupar a su familia y amigos. 
-                        Pero a pesar de que llega a mejorar bastante, no es capaz 
-                        de alcanzar el nivel de Kyomoto y decide rendirse.
-                    </p>
-
-                    <p>
-                        Basado en el aclamado manga de Tatsuki Fujimoto, el creador de “Chainsaw Man”, 
-                        Look Back captura los altibajos de la búsqueda de la excelencia artística y los 
-                        vínculos especiales que se forman a través de la colaboración creativa. La desgarradora 
-                        historia es el impresionante debut como director de largometraje de Kiyotaka Oshiyama que 
-                        te dejará llorando y te inspirará a perseguir tus propios sueños artísticos.
-                    </p>
-
+            <div class="presentacion" role="region" aria-label="Información principal de Look Back">
+                <div class="columna img1" role="figure" aria-label="Imagen de Ayumu Fujino y Kyomoto">
+                    <img src="Imagenes/Look Back Still 01.png" alt="Escena de Look Back mostrando a las protagonistas">
                 </div>
-            </article>
+                
+                <article class="columna sinopsis" role="article" aria-labelledby="sinopsis-titulo">
+                    <h2 id="sinopsis-titulo">Sinopsis</h2>
+                    <div class="sinopsis-contenido">
+                        <p>
+                            La historia está protagonizada por dos chicas de Yamagata 
+                            que aspiran a convertirse en dibujantes. Ayumu Fujino 
+                            (藤野 歩 Fujino Ayumu) es una estudiante de primaria que 
+                            publica tiras cómicas de cuatro viñetas (yonkoma) en el 
+                            periódico escolar, mientras que Kyomoto (京本 Kyōmoto) es una 
+                            compañera que tiene agorafobia y no va a clase. Cuando ambas 
+                            comparten sección en el periódico, Fujino enfurece al descubrir 
+                            que Kyomoto dibuja mucho mejor que ella.
+                        </p>
 
-            <div class="columna img2" role="figure" aria-label="Póster oficial"tabindex="0">
-                <img src="Imagenes/Look Back Poster Oct 4 2024.jpg">
+                        <p>
+                            Herida en su orgullo, 
+                            estudia por su propia cuenta los fundamentos del dibujo y se 
+                            obsesiona al punto de preocupar a su familia y amigos. 
+                            Pero a pesar de que llega a mejorar bastante, no es capaz 
+                            de alcanzar el nivel de Kyomoto y decide rendirse.
+                        </p>
+
+                        <p>
+                            Basado en el aclamado manga de Tatsuki Fujimoto, el creador de "Chainsaw Man", 
+                            Look Back captura los altibajos de la búsqueda de la excelencia artística y los 
+                            vínculos especiales que se forman a través de la colaboración creativa. La desgarradora 
+                            historia es el impresionante debut como director de largometraje de Kiyotaka Oshiyama que 
+                            te dejará llorando y te inspirará a perseguir tus propios sueños artísticos.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="columna img2" role="figure" aria-label="Póster oficial">
+                    <img src="Imagenes/Look Back Poster Oct 4 2024.jpg" alt="Póster oficial de Look Back">
+                </div>
             </div>
         </section>
-        
-        <center>
-            <h2>Trailer de la pelicula</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ahXmiId65-s" title="Trailer de la pelicula Look Back" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen aria-describedby="Trailer"></iframe>
-        </center>
+
+        <section role="region" aria-labelledby="trailer-titulo" aria-hidden="true" tabindex="-1">
+            <h2 id="trailer-titulo">Trailer de la película</h2>
+            <div role="complementary" style="display: flex; gap: 2rem; align-items: start;">
+                <div style="flex: 1;">
+                    <iframe src="https://www.youtube.com/embed/ahXmiId65-s" title="Trailer de la película Look Back" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div style="flex: 3;">
+                    <p>Aqui estara una tabla jaja</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lo tome de otra pagina que tenia lo mismo jaja https://gkids.com/films/look-back/ -->
+        <section role="region" aria-labelledby="soundtrack-titulo">
+            <h2 id="soundtrack-titulo">Escucha el soundtrack aquí</h2>
+            <div role="complementary">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3fPBJ0HC62DBciQuUYoXAz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" aria-label="Soundtrack de la película Look Back"></iframe>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>

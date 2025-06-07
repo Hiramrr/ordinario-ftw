@@ -134,6 +134,15 @@ a:focus {
     color: #121212;
 }
 
+iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.spotify{
+  border-radius:12px
+}
+
 /*Esto es para el celular, esta raro jaja*/
 @media screen and (max-width: 768px) {
     .presentacion {
@@ -163,5 +172,11 @@ a:focus {
 
     h2 {
         font-size: 24px;
+    }
+
+    iframe{
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
     }
 }
