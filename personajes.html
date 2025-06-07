@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personajes</title>
+    <title>Look Back Personajes</title>
+    <meta name="description" content="Personajes principales de Look back">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <a href="#contenido" class="saltarse">Saltar al contenido principal</a>
     
+    <header id="header" class="header" role="banner">
+        <button aria-expanded="false" aria-controls="main-nav" id="menu"aria-label="Abrir menú de navegación">
+            Menú
+        </button>
+        <nav id="main-nav" role="navigation" aria-label="Menú principal" hidden>
+            <ul role="menu">
+                <li><a role="menuitem" href="index.html"> Inicio</a></li>
+                <li><a role="menuitem" aria-current="page"> Personajes</a></li>
+                <li><a role="menuitem" href="comentarios.html"> Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div role="tablist">
+            <button role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" title="Gato increible">
+                pestaña 1
+            </button>
+            <button role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" title="Gato sorprendido">
+                pestaña 2
+            </button>
+        </div>
+        
+        <div role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+            <fieldset>
+                <h2>Ayumu Fujino</h2>
+                <p>Ayumu Fujino es la protagonista principal de la serie de manga one-shot "Look Back" y 
+                de la adaptación cinematográfica homónima de 2024. Es una joven apasionada por dibujar 
+                manga y constantemente elogiada por su gran habilidad. Sin embargo, su mundo cambia para 
+                siempre después de que una compañera de clase, que se recluía en casa, le presenta un 
+                cómic que supera con creces sus habilidades de dibujo, hasta el punto de que una amiga 
+                que una vez le dijo que sin duda tenía las habilidades para ser una mangaka profesional 
+                se refirió a su trabajo como "promedio". Este suceso la conmovió profundamente, ya que 
+                los elogios y la atención generalizados a su arte la hicieron considerarse "especial". 
+                En respuesta, se siente intensamente motivada a superar a la otra artista y se propone 
+                mejorar sus habilidades. Esto finalmente la lleva a conocer a la artista rival, Kyomoto, 
+                una persona que se recluye en casa y se niega a asistir a la escuela presencialmente debido 
+                a una grave ansiedad social. Después de que su rival le revela que en realidad es una fanática 
+                acérrima de sus cómics, ambas forjan una profunda "amistad" que cambia sus vidas para siempre.
+                </p>
+            </fieldset>
+        </div>
+
+        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2 "hidden>
+            <fieldset>
+                <h2>Kyomoto</h2>
+                <p>
+                Kyomoto es la rival de Ayumu Fujino, una artista de manga que se recluye en casa y se niega a 
+                asistir a la escuela presencialmente debido a una grave ansiedad social. Después de que su rival 
+                le revela que en realidad es una fanática acérrima de sus cómics, ambas forjan una profunda 
+                "amistad" que cambia sus vidas para siempre.
+                </p>
+            </fieldset>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="logica_paneles.js"></script>
 </body>
 </html>

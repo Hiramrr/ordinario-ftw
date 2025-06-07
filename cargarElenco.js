@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-                            loadXMLDoc();
+  loadXMLDoc();
 });
 
 function loadXMLDoc() {
