@@ -172,15 +172,41 @@ a {
     transition: background-color 0.3s ease;
 }
 
-blockquote{
-    font-size: 20px;
-    width: 100vw;
+blockquote {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
     color: white;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    text-shadow: 0px 10px 10px rgb(0, 0, 0);
-    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    position: relative;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    opacity: 0.3;
+}
+
+blockquote::after {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    opacity: 0.3;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic;
 }
 
 /*Esto es para el celular, esta raro jaja*/
