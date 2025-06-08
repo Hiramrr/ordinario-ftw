@@ -1,0 +1,80 @@
+.wiki-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.infobox {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: rgba(74, 175, 80, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infobox caption {
+    background-color: #4CAF50;
+    color: #121212;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.infobox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infobox th, .infobox td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(74, 175, 80, 0.2);
+}
+
+.infobox th {
+    text-align: left;
+    color: #4CAF50;
+    width: 40%;
+    vertical-align: top;
+}
+
+.infobox td {
+    color: #e0e0e0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.main-content h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+.main-content p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .wiki-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .infobox {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

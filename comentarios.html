@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_comentarios.css">
 </head>
 <body>
     <a href="#contenido" class="saltarse">Saltar al contenido principal</a>
@@ -20,5 +22,28 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="comentarios" role="region" aria-label="Portada de Look Back">
+            <h1>Opina sobre la pelicula</h1>
+        </div>
+
+        <h2>Deja tu comentario</h2>
+
+        <fieldset class="principal">
+            <fieldset legend="Comentario">
+                <legend>Información personal</legend>
+                <form>
+                    <label for="user">Nombre</label>
+                    <input type="text" id="user">
+                    <label for="password">Correo Electrónico</label>
+                    <input type="email" id="email">
+                    <label for="comment">Comentario de la pelicula</label>
+                    <input type="text" id="comentario">
+                    <input type="button" value="Enviar" id="enviar">
+                </form>
+            </fieldset>
+        </fieldset>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
