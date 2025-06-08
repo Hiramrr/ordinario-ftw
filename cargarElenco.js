@@ -1,3 +1,4 @@
+//este Listener carga la funcion loadXMLDoc cuando se carga la pagina
 window.addEventListener('DOMContentLoaded', function() {
   loadXMLDoc();
 });
@@ -13,6 +14,7 @@ function loadXMLDoc() {
     xhttp.send();
   }
   
+  //esta funcion muestra los miembros del elenco en la tabla
   function mostrarMiembros(miembros) {
     let table = "<tr><th>Nombre</th><th>Papel</th><th>Descripcion</th></tr>";
     for (let i = 0; i < miembros.length; i++) {
@@ -33,7 +35,6 @@ function loadXMLDoc() {
       if (descripcionElem) {
         descripcion = descripcionElem.textContent;
       }
-  
       table += `<tr class="tabla-elenco" tabindex="0">
                   <td>${nombre}</td>
                   <td>${papel}</td>
@@ -42,3 +43,4 @@ function loadXMLDoc() {
     }
     document.getElementById("demo").innerHTML = table;
   }
+  //es el mismo codigo que la pagina02 que se hizo en clase pero con unas modificaciones para mi ejemplo

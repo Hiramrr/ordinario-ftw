@@ -1,4 +1,5 @@
 //logica de manipulación de panels
+//es el mismo codigo que hicimos en clase para cambiar de panel
     const tabs = document.querySelectorAll('[role="tab"]')
     const paneles = document.querySelectorAll('[role="tabpanel"]')
 

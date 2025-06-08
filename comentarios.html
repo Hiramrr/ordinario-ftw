@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios</title>
+    <title>Comentarios - Look Back</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos_comentarios.css">
 </head>
 <body>
-    <a href="#contenido" class="saltarse">Saltar al contenido principal</a>
+    <a href="#contenido">Saltar al contenido principal</a>
     
     <header id="header" class="header" role="banner">
-        <button aria-expanded="false" aria-controls="main-nav" id="menu"aria-label="Abrir menú de navegación">
+        <button aria-expanded="false" aria-controls="main-nav" id="menu" aria-label="Abrir menú de navegación">
             Menú
         </button>
         <nav id="main-nav" role="navigation" aria-label="Menú principal" hidden>
@@ -27,23 +27,37 @@
             <h1>Opina sobre la pelicula</h1>
         </div>
 
-        <h2>Deja tu comentario</h2>
+        <section aria-labelledby="titulo-comentarios">
+            <h2 id="titulo-comentarios">Deja tu comentario</h2>
 
-        <fieldset class="principal">
-            <fieldset legend="Comentario">
-                <legend>Información personal</legend>
-                <form>
-                    <label for="user">Nombre</label>
-                    <input type="text" id="user">
-                    <label for="password">Correo Electrónico</label>
-                    <input type="email" id="email">
-                    <label for="comment">Comentario de la pelicula</label>
-                    <input type="text" id="comentario">
-                    <input type="button" value="Enviar" id="enviar">
+            <fieldset class="principal">
+                <legend id="contenido" >Formulario de comentarios</legend>
+                <form id="form-comentarios" novalidate>
+                    <div class="campo-formulario">
+                        <label for="user">Nombre completo <span aria-label="campo requerido">*</span></label>
+                        <input type="text" id="user" name="user" required aria-required="true">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico <span aria-label="campo requerido">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="comentario">Tu opinión sobre la película <span aria-label="campo requerido">*</span></label>
+                        <textarea id="comentario" name="comentario" required aria-required="true" rows="5"></textarea>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <button type="submit" id="enviar" aria-label="Enviar comentario">
+                            Enviar comentario
+                        </button>
+                    </div>
                 </form>
             </fieldset>
-        </fieldset>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
